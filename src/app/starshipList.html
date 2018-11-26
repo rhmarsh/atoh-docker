@@ -12,4 +12,9 @@
   </section>
 
   <pre>{{gcp | json}}</pre>
+  <ul>
+      <li *ngFor="let res of gcp | async">
+          {{res}}
+      </li>
+  </ul>
   

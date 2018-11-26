@@ -15,7 +15,8 @@ export class StarshipListComponent {
     this.starships = api.starships();
     this.gcp = api.checkGCP();
     api.checkGCP().subscribe(res => {
-        console.log(res)
+        console.log(res);
+        
     });
   }
 }
