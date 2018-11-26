@@ -14,5 +14,8 @@ export class StarshipListComponent {
   constructor(api: SWAPI) {
     this.starships = api.starships();
     this.gcp = api.checkGCP();
+    api.checkGCP().subscribe(res => {
+        console.log(res)
+    });
   }
 }
