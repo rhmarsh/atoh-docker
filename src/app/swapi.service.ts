@@ -43,6 +43,6 @@ export class SWAPI {
   }
 
   checkGCP(): Observable<any> {
-    return this.http.get<any>('http://10.11.245.77:8080/users');
+    return this.http.get<any>('http://35.232.149.80:8080/users');
   }
 }
