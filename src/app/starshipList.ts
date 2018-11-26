@@ -9,8 +9,10 @@ import { IFilmMeta, SWAPI } from './swapi.service';
 })
 export class StarshipListComponent {
   starships: Observable<IFilmMeta[]>;
+  gcp: Observable<any>;
 
   constructor(api: SWAPI) {
     this.starships = api.starships();
+    this.gcp = api.checkGCP();
   }
 }

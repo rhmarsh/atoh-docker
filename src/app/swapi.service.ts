@@ -41,4 +41,8 @@ export class SWAPI {
         return forkJoin(shipObservables);
       }));
   }
+
+  checkGCP(): Observable<any> {
+    return this.http.get<any>('http://35.232.149.80:8080/users');
+  }
 }
